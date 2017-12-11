@@ -65,7 +65,7 @@ class Prostokat
    }
    boolean przecina(Okrag obj)
    {
-      return ((this.wierzcholek.x<=obj.srodek.x+promien)&&(this.wierzcholek.x+this.dlugosc>=obj.srodek.x+promien))&&((this.wierzcholek.y<=obj.srodek.y+promien)&&(this.wierzcholek.y+this.szerokosc>=obj.srodek.y+promien));
+      return ((this.wierzcholek.x<=obj.srodek.x+obj.promien)&&(this.wierzcholek.x+this.dlugosc>=obj.srodek.x+obj.promien))&&((this.wierzcholek.y<=obj.srodek.y+obj.promien)&&(this.wierzcholek.y+this.szerokosc>=obj.srodek.y+obj.promien));
    }
 }
 
@@ -152,5 +152,11 @@ public class Program
       
       boolean x1=obj2.przecina(obj2);
       System.out.println("zawiera "+obj2+x1);
+      /**
+      * Compute Rectangle
+      * @param szerokosc szerokosc 
+      * @param dlugosć   dlugosc
+      * @return          to co chcesz
+      */
    }                                             
 }
